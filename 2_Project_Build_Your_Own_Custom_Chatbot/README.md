@@ -36,11 +36,11 @@ The Wikipedia API will be more similar to the examples shown in the demos and ex
 
 We also provide a data directory containing CSV files that you can use for the project. These are:
 
-+2023_fashion_trends.csv- this file contains reports and quotes on fashion trends for 2023. Each line includes the source URL, article title, and text snippet.
++ 2023_fashion_trends.csv- this file contains reports and quotes on fashion trends for 2023. Each line includes the source URL, article title, and text snippet.
 
 + character_descriptions.csv- this file contains descriptions of characters from theater, television and cinema productions. Each line contains the name, description, media, and configuration. All characters were invented by an OpenAI model.
 
-+nyc_food_scrap_drop_off_sites.csv - This file contains locations, times, and other information about food scrap drop-off locations in New York City. This information was retrieved in early 2023, and you can also get the latest version from this open data portal (opens in a new tab).
++ nyc_food_scrap_drop_off_sites.csv - This file contains locations, times, and other information about food scrap drop-off locations in New York City. This information was retrieved in early 2023, and you can also get the latest version from this open data portal (opens in a new tab).
 
 You can also obtain your own data. For example, you may want to use web scraping or other documents you have on hand. The dataset must have at least 20 lines and must consist of text data. OpenAI language models are not optimized for numerical or logical reasoning, so number-heavy data, such as budgets, sensor data, or inventory, is not appropriate.
 
