@@ -1,54 +1,30 @@
-# Agente Imobiliário Personalizado
+# Aplicar Ajuste Fino Leve a um Modelo de Base
 
-# Personalized Real Estate Agent
+# Apply Light Fine Tuning to a Base Model
 
 ## Introdução ao Projeto
-Imagine que você é um desenvolvedor talentoso da "Future Homes Realty", uma empresa imobiliária com visão de futuro. Em um setor onde a personalização é fundamental para a satisfação do cliente, sua empresa quer revolucionar a forma como os clientes interagem com os anúncios imobiliários. O objetivo é criar uma experiência personalizada para cada comprador, tornando o processo de pesquisa de imóveis mais envolvente e adaptado às preferências individuais.
+O ajuste fino leve é ​​uma das técnicas mais importantes para adaptar modelos de fundação, pois permite modificar modelos de fundação de acordo com suas necessidades, sem a necessidade de recursos computacionais substanciais.
+
+Neste projeto, você aplicará o ajuste fino com eficiência de parâmetros usando a peftbiblioteca Hugging Face.
 
 ## Introduction to the Project
-Imagine you are a talented developer at "Future Homes Realty", a forward-thinking real estate company. In an industry where personalization is key to customer satisfaction, your company wants to revolutionize the way customers interact with real estate listings. The goal is to create a personalized experience for each buyer, making the property search process more engaging and tailored to individual preferences.
+Light fine-tuning is one of the most important techniques for adapting foundation models, as it allows you to modify foundation models according to your needs without the need for substantial computational resources.
 
-## O desafio
-Sua tarefa é desenvolver um aplicativo inovador chamado "HomeMatch". Este aplicativo aproveita grandes modelos de linguagem (LLMs) e bancos de dados vetoriais para transformar listagens imobiliárias padrão em narrativas personalizadas que ressoam com as preferências e necessidades exclusivas dos potenciais compradores.
+In this project, you will efficiently fine-tune parameters using the Hugging Face library.
 
-## The challenge
-Your task is to develop an innovative application called "HomeMatch". This app leverages large language models (LLMs) and vector databases to transform standard real estate listings into personalized narratives that resonate with potential buyers' unique preferences and needs.
+## Resumo do projeto
+Neste projeto, você reunirá todos os componentes essenciais de um processo de treinamento e inferência PyTorch + Hugging Face. Especificamente, você irá:
 
-## Componentes principais do "HomeMatch"
-### Compreendendo as preferências do comprador:
+Carregue um modelo pré-treinado e avalie seu desempenho
+Execute o ajuste fino com eficiência de parâmetro usando o modelo pré-treinado
+Realize inferência usando o modelo ajustado e compare seu desempenho com o modelo original.
 
-Os compradores inserirão seus requisitos e preferências, como localização, tipo de propriedade, orçamento, comodidades e opções de estilo de vida.
-O aplicativo usa LLMs para interpretar essas entradas em linguagem natural, entendendo solicitações diferenciadas além dos filtros básicos.
-Integrando com um banco de dados vetorial:
+## Project summary
+In this project, you will bring together all the essential components of a PyTorch + Hugging Face training and inference process. Specifically, you will:
 
-## Main components of "HomeMatch"
-### Understanding Buyer Preferences:
-
-Buyers will enter their requirements and preferences such as location, property type, budget, amenities and lifestyle choices.
-The application uses LLMs to interpret these natural language inputs, understanding nuanced requests beyond basic filters.
-Integrating with a vector database:
-
-### Conecte o "HomeMatch" a um banco de dados vetorial, onde são armazenadas todas as listagens de propriedades disponíveis.
-Utilize incorporações de vetores para combinar propriedades com preferências do comprador, concentrando-se em aspectos como vibrações do bairro, estilos arquitetônicos e proximidade de comodidades específicas.
-Geração de descrição de listagem personalizada:
-
-### Connect "HomeMatch" to a vector database, where all available property listings are stored.
-Use vector embeds to match properties to buyer preferences, focusing on aspects like neighborhood vibes, architectural styles, and proximity to specific amenities.
-Custom listing description generation:
-
-### Para cada listagem correspondente, use um LLM para reescrever a descrição de uma forma que destaque os aspectos mais relevantes para as preferências do comprador.
-Garanta que a personalização enfatize características atraentes para o comprador sem alterar as informações factuais sobre o imóvel.
-
-### For each matching listing, use an LLM to rewrite the description in a way that highlights the aspects most relevant to the buyer's preferences.
-Ensure that personalization emphasizes features that are attractive to the buyer without altering the factual information about the property.
-
-### Apresentação da listagem:
-
-Produza as listagens personalizadas como uma descrição de texto da listagem.
-
-### Listing presentation:
-
-Output the custom listings as a text description of the listing.
+Load a pre-trained model and evaluate its performance
+Perform parameter-efficient fine-tuning using the pre-trained model
+Perform inference using the fitted model and compare its performance to the original model.
 
 ## Começando
 
@@ -57,16 +33,12 @@ Output the custom listings as a text description of the listing.
 ### Google Colab Notebook:
 Salve uma cópia no google drive do notebook, à partir da url abaixo, e execute as células do notebook sequencialmente preferencialmente na gpu:
 
-https://colab.research.google.com/drive/13d2Vcc9WQz-FcZKPORlOYc4_v2VsH_Ug?usp=sharing
-
-Se preferir pode pular a execução das células que geram o arquivo 'Listagens.txt', e fazer o upload do arquivo disponível neste repositório
+https://drive.google.com/file/d/1AV61w600cbSPuWI1vmWVJ3VLc1S70-sU/view?usp=sharing
 
 ### Google Colab Notebook:
 Save a copy on the notebook's Google Drive, from the url below, and run the notebook's cells sequentially, preferably on the GPU:
 
-https://colab.research.google.com/drive/13d2Vcc9WQz-FcZKPORlOYc4_v2VsH_Ug?usp=sharing
-
-If you prefer, you can skip executing the cells that generate the 'Listagens.txt' file, and upload the file available in this repository
+https://drive.google.com/file/d/1AV61w600cbSPuWI1vmWVJ3VLc1S70-sU/view?usp=sharing
 
 ### Executar Localmente
 
@@ -74,12 +46,12 @@ If you prefer, you can skip executing the cells that generate the 'Listagens.txt
 git clone https://github.com/italopguimaraes/Programa-Nanodegree-IA-Generative.git
 
 2) A partir do diretório anterior via terminal, entre no sub-diretório Programa-Nanodegree-IA-Generative
-/4_Custom_Real Estate_Agent.
+/1_Apply_Lightweight_Fine_Tuning_to_Foundation_Model.
 
 3) No terminal execute o comando para iniciar o jupyter notebook:
 jupyter notebook.
 
-4) Execute as células do notebook sequencialmente, para instalar as depêndencias e verificar as funcionalidades da aplicação, se preferir pode pular a execução das células que geram o arquivo 'Listagens.txt', e usar o arquivo localmente.
+4) Execute as células do notebook sequencialmente, para instalar as depêndencias e verificar as funcionalidades da aplicação.
 
 ### Run Locally
 
@@ -87,10 +59,9 @@ jupyter notebook.
 git clone https://github.com/italopguimaraes/Programa-Nanodegree-IA-Generative.git
 
 2) From the previous directory via terminal, enter the Program-Nanodegree-IA-Generative sub-directory
-/4_Custom_Real Estate_Agent.
+/1_Apply_Lightweight_Fine_Tuning_to_Foundation_Model.
 
 3) In the terminal, run the command to start jupyter notebook:
 jupyter notebook.
 
-4) Run the notebook cells sequentially, to install the dependencies and check the application's functionalities. If you prefer, you can skip running the cells that generate the 'Listagens.txt' file, and use the file locally.
-
+4) Run the notebook cells sequentially, to install the dependencies and check the application's functionalities.
