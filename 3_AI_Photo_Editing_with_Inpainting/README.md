@@ -19,7 +19,6 @@ Let's use some of this knowledge by building something interesting and fun!
   </head>
   <body>
       <img src='https://drive.google.com/uc?id=1N4ToI9tCjGVKO3Y_zmASxGVGvbVsDPSD&export=download' width="800">
-      <script src="script.js"></script>
   </body>
 </html>
 
@@ -34,7 +33,6 @@ With our app we will be able to change the background of an image and replace it
   </head>
   <body>
       <img src='https://drive.google.com/uc?id=17EU3GOiuwh8F2AYKUKtZanezLnQPyG5D&export=download' width="800">
-      <script src="script.js"></script>
   </body>
 </html>
 
